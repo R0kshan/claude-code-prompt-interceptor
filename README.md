@@ -1,4 +1,4 @@
-# Easy to use Claude Code Prompt Interceptor
+# Ready to use Claude Code Prompt Interceptor
 
 A ready to use docker solution (using [LiteLLM](https://docs.litellm.ai/docs/providers/github) and [mitmproxy](https://mitmproxy.org/)) to intercept, inspect, and understand the system prompt that Claude Code sends to the Anthropic Messages API on every request.
 
