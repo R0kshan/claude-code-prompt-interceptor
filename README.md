@@ -9,7 +9,7 @@ A ready to use docker solution (using [LiteLLM](https://docs.litellm.ai/docs/pro
 Understanding what is actually being sent by Claude at every request and therefore what generates so many tokens. Knowing how Claude's system prompt is structured can also help write better CLAUDE.md files, custom prompts, and skills.
 Claude Code sends a large system prompt (~26,000 characters (as of version 2.1.126)) during the first request (based on dump files). To this date, and to my knowledge, this prompt is not published in any official Anthropic documentation. A way to obtain it is to intercept the HTTP traffic between Claude Code and the API. This repository documents that method.
 
-On free-tier models (e.g. GitHub Models API, which enforces an 8,000 token limit per request), Claude Code's system prompt alone exceeds the allowed context window, making the tool unusable out of the box. This repository helps understand what goes on under the hood of each request.
+On free-tier models (e.g. GitHub Models API, which enforces an 8,000 token limit per request), Claude Code's system prompt alone exceeds the allowed context window, making Claude Code unusable. This repository helps understand what goes on under the hood of each request.
 
 For testing purposes, it is possible to override this system prompt with the claude code parameter `--system-prompt`, however note that this would change Claude Code's behavior and effectiveness which is not recommended for serious usage.
 
